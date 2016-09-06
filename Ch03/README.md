@@ -2,7 +2,7 @@
 
 파이썬에서 문자열은 크게 아래와 같이 나눌 수 있다.
 
-|__phthon2__ |__python3__
+-|__phthon2__ |__python3__
 -------------|--------|--------
 __8bit 값__  |str     |bytes
 __유니코드__  |unicode |str
@@ -23,7 +23,8 @@ UTF-16LE  |0x4100
 ![유니코드 샌드위치](../Images/UnicodeSandwich.png)
 
 유니코드 샌드위치란 아래와 같은 방식으로 문자열을 다루는 것을 의미한다.
-1. 입력을 byte를 디코딩한다.
+
+1. 입력 시 byte를 디코딩한다.
 2. 문자열을 텍스트로만 처리한다.
 3. 출력 시 str을 인코딩한다.
 
@@ -71,7 +72,7 @@ def to_str(unicode_or_str):
     return value
 ```
 
-python3 문자열을 파일에서 읽어오거나 쓸 때 인코딩을 지정할 수 있다.
+python3에서는 문자열을 파일에서 읽어오거나 쓸 때 인코딩을 지정할 수 있다.
 ```py
 with open('test.txt', 'w', encoding='ansi') as f:
     f.write(os.urandom(10))
@@ -89,7 +90,7 @@ with open('test.txt', 'w', encoding='utf-8') as f:
 with open('test.txt', 'r') as f:
     print(f.read())              #호출시 에러
 
-#에러를 확인해보면 cp949로 디코딩 할 수 없는 문자가 있는걸 알 수 있다.
+#에러를 확인해보면 cp949로 디코딩 할 수 없는 문자가 있는걸 알 수 있다. 한글 윈도우의 기본 인코딩이 cp949인 것을 알 수 있다.
 Traceback (most recent call last):
   File "C:/Users/xtozero/Documents/Effective Python/SampleCode/ch03.py", line 28, in <module>
     print(f.read())
