@@ -97,9 +97,21 @@ Traceback (most recent call last):
 UnicodeDecodeError: 'cp949' codec can't decode byte 0xed in position 0: illegal multibyte sequence
 ```
 
+또한 python3의 open은 유니코드 문자를 담은 str인스턴스를 기대하기 때문에 바이너리 파일을 다루려면 바이너리 모드로 파일을 열어야 한다.
+```py
+with open('binary.txt', 'wb') as f:
+    f.write(os.urandom(10))
+```
+
 python2에서는 str이 7bit 아스키 문자만 포함하고 있다면 unicode와 str이 같은 타입처럼 보인다.
 하지만 python3에서는 bytes와 str은 빈 문자열이라도 절대 같지 않다.
 > python공식 문서에서는 str 코드 포인트를 메모리에 저장하는 문제에 대한 언급을 피하고 있다.
 다만 메모리 안에서 모든 문자와 슬라이스에 효율적으로 접근할 수 있도록 ptyhon3는 str을 코드 포인트마다 고정된 수의 바이트를 이용해서 저장한다.
 python 3.3 이전에는 2byte 나 4byte 중 하나를 사용할 수 있도록 컴파일할 수 있었다.
 python 3.3 이후에는 str객체를 생성할 때 효율적인 메모리 구조를 조사하여 1byte, 2byte, 4byte 구조 중 하나를 사용한다.
+
+## 정리
+* python3에서 bytes는 8bit, str은 유니코드 문자를 저장한다.
+* python2에서 str은 8bit, unicode는 유니코드 문자를 저장한다.
+* 문자열을 처리할 때는 유니코드 샌드위치를 이용해서 문자열을 다뤄야 한다.
+* 바이너리 데이터를 파일에서 읽거나 쓸 때는 파일을 바이너리 모드로 열어야 한다.

@@ -1,4 +1,5 @@
 # python 3.5.2 version
+import os
 
 
 def to_str(bytes_or_str):
@@ -23,6 +24,9 @@ print(encoded_str)
 decoded_str = to_str(encoded_str)
 print(type(decoded_str))
 print(decoded_str)
+
+with open('binary.txt', 'wb') as f:
+    f.write(os.urandom(10))
 
 with open('test.txt', 'w', encoding='utf-8') as f:
     f.write('파이썬 코딩의 기술')
