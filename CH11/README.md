@@ -2,7 +2,7 @@
 
 파이썬에서는 관련 객체로 구성된 리스트를 많이 사용한다.
 
-리스트 컴프리헨션을 사용하면 파생 리스트(derived list)를 쉽게 얻을 수 있다.( [Ch07](..\Ch07\README.md) 참고 )
+리스트 컴프리헨션을 사용하면 파생 리스트(derived list)를 쉽게 얻을 수 있다.( [Ch07](../Ch07) 참고 )
 ```py
 names = ['Cecilia', 'Lise', 'Marie']
 letters = [len(n) for n in names]
@@ -29,7 +29,7 @@ print(max_latter)
 7
 ```
 
-문제는 루프문이 별로 보기 안 좋다는 것이다. 코드도 읽기 어렵고 배열에 2번 접근하게 된다. enumerate를( [Ch10](..\Ch10\README.md) 참고 ) 사용하면 이런 문제점을 개선할 수 있지만 완벽하지 않다.
+문제는 루프문이 별로 보기 안 좋다는 것이다. 코드도 읽기 어렵고 배열에 2번 접근하게 된다. enumerate를( [Ch10](../Ch10/) 참고 ) 사용하면 이런 문제점을 개선할 수 있지만 완벽하지 않다.
 ```py
 for i, name in enumerate(names):
     count = letters[i]
