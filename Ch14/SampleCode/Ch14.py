@@ -20,6 +20,7 @@ if not result:
 
 print('-' * 40)
 
+
 def divide_except(a, b):
     try:
         return a / b
