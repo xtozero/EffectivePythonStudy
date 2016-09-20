@@ -30,8 +30,10 @@ remainder(20, number=7)
 TypeError: remainder() got multiple values for argument 'number'
 ```
 키워드 인수를 사용하면 세가지 이점을 얻을 수 있다.
+
 1. 코드를 처음 보는 사람이 함수 호출을 더 명확하게 이해할 수 있다.
 > 위의 예제의 remainder의 본문을 보지 않아도 어떤 인수가 나눗수인지 분명하게 알 수 있다.
+
 2. 함수를 정의할 때 기본값을 설정할 수 있다.
 > ```py
 > def flow_rate(weight_diff, time_diff, period=1):
