@@ -34,6 +34,7 @@ def log2(message, when=None):
 log2('Hi there!')
 sleep(0.1)
 log2('Hi again!')
+
 >>>
 2016-09-21 20:01:26.046833: Hi there!
 2016-09-21 20:01:26.146843: Hi again!
@@ -61,7 +62,7 @@ print('Bar: ', bar)
 위의 예제를 보면 기본값이 공유되는 것을 볼 수 있다. log 함수 예제와 마찬가지로 기본값은 단 한 번만 평가되기 때문에 모든 함수 호출이 같은 기본 인수를 공유하기 때문이다.
 
 이 예제도 마찬가지로 기본값을 None으로 하고 docstring을 작성하는 것으로 문제를 회피할 수 있다.
-```
+```py
 def decode2(data, default=None):
     ''' Load Json data from a string
     :param data: JSON data to decode
@@ -79,6 +80,10 @@ bar = decode2('also data')
 bar['meep'] = 1
 print('Foo: ', foo)
 print('Bar: ', bar)
+
+>>>
+Foo:  {'stuff': 5}
+Bar:  {'meep': 1}
 ```
 
 ## 정리
