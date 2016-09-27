@@ -136,6 +136,9 @@ def mapreduce(worker_class, input_class, config):
 
 result = mapreduce(LineCountWorker, PathInputData, {'data_dir': 'testdir'})
 print(result)
+
+>>>
+38
 ```
 
 이전과 같이 잘 작동하며 새로운 클래스를 생성해도 GenericInputData, GenericWorker 클래스를 상속받아 @classmethod 함수를 구현하면 손쉽게 기능을 확장할 수 있다.

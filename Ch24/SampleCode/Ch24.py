@@ -71,6 +71,7 @@ def mapreduce(data_dir):
 result = mapreduce('testdir')
 print(result)
 
+
 class GenericInputData(object):
     def read(self):
         raise NotImplementedError
