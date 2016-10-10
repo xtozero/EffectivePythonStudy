@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="사용자 정의 함수 사용.cpp">
+    <ClCompile Include="BuiltInFunction.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="내장함수 사용.cpp">
+    <ClCompile Include="UserDefineFunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDefineClass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
