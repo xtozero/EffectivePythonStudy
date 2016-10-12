@@ -88,6 +88,33 @@ ENV/
 # Rope project settings
 .ropeproject
 
+# C++
+*.exp
+*.ilk
+*.log
+*.tlog
+*.obj
+*.pch
+*.opensdf
+*.idb
+*.pdb
+*.sdf
+*.res
+*.lib
+*.suo
+*.ipch
+*.lib
+*.cso
+*.dll
+*.opendb
+*.db
+*.iobj
+*.ipdb
+*.vspx
+Debug/
+Release/
+PythonBoost/
+
 # etc
 *.xml
 *.iml
