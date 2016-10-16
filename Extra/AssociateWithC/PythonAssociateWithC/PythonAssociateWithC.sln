@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythonAssociateWithC", "PythonAssociateWithC.vcxproj", "{2CE6D1E1-7AD4-447C-A3E0-8176C2C013B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssociatePythonWithSWIG", "..\AssociatePythonWithSWIG\AssociatePythonWithSWIG.vcxproj", "{B01A7307-D652-4486-A04C-89E9AC23DBFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,18 @@ Global
 		{2CE6D1E1-7AD4-447C-A3E0-8176C2C013B2}.Release|x64.Build.0 = Release|x64
 		{2CE6D1E1-7AD4-447C-A3E0-8176C2C013B2}.Release|x86.ActiveCfg = Release|Win32
 		{2CE6D1E1-7AD4-447C-A3E0-8176C2C013B2}.Release|x86.Build.0 = Release|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Debug|x64.ActiveCfg = Debug|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Debug|x64.Build.0 = Debug|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Debug|x86.Build.0 = Debug|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.PythonBoost|x64.ActiveCfg = Release|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.PythonBoost|x64.Build.0 = Release|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.PythonBoost|x86.ActiveCfg = Release|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.PythonBoost|x86.Build.0 = Release|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Release|x64.ActiveCfg = Release|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Release|x64.Build.0 = Release|x64
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Release|x86.ActiveCfg = Release|Win32
+		{B01A7307-D652-4486-A04C-89E9AC23DBFC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

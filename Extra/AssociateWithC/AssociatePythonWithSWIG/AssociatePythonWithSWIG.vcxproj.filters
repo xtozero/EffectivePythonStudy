@@ -15,22 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BuiltInFunction.cpp">
+    <ClCompile Include="..\PythonAssociateWithC\AssociatePythonWithSWIG.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="UserDefineFunction.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="UserDefineClass.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="UserDefineFunctionWithBoost.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="AssociatePythonWithSWIG.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="AssociatePythonWithSWIG.i">
+    <ClCompile Include="..\PythonAssociateWithC\AssociatePythonWithSWIG_wrap.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
