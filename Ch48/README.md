@@ -9,7 +9,7 @@ PyPI는 명령줄 도구 pip를 통해서 사용한다. pip는 파이썬 3.4 이
 파이썬 3.4 이전 버전에서는 http://packaging.python.org 에서 pip를 설치할 수 있다. <br>
 pip를 통해서 새 모듈을 설치하는 방법은 간단하다. 예를 들어 pytz모듈을 다음과 같이 설치할 수 있다. <br>
 
-![using pip](../Images/pip.png)
+![using pip](../Images/pip.PNG)
 
 패키지의 파이썬 3 버전을 설치하려면 __pip3__ 명령을 사용하고 파이썬 2 버전의 패키지를 설치하려면 __pip__ 명령어를 사용하면 된다. <br>
 인기 있는 패키지는 대부분 파이썬 2와 3을 모두 지원한다. <br>
